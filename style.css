@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    background-color: black;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(65, 130, 228);
+    color: aliceblue;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    font-size: 20px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+nav ul li+li::before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 2px;
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    left: -16px;
+    top: 2px;
+
+}
+
+.intro {
+    height: 90vh;
+    background-image: url(/joseph-barrientos-oQl0eVYd_n8-unsplash.jpg);
+    background-size: cover;
+}
+
+.intro__info {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro__info h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 3px black;
+    font-size: 50px;
+}
+
+.intro__info button {
+    border: 5px black;
+    background-color: rgba(145, 190, 233, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.services {
+    width: 100%;
+    height: 450px;
+}
+
+.services__info {
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.services__info h3 {
+    font-size: 30px;
+}
+
+.services__info p {
+    margin: 30px;
+}
+
+.services_icon {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.services_icon div i {
+    font-size: 50px;
+    color: rgb(150, 150, 150);
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+.main_item {
+    height: 500px;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+img{
+    width: 150px;
+   height: 200px;
+    border-radius:50%;
+    border: 3px solid white;
+}
+footer{
+    margin-top: 100px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    
+}
+.social__media {
+    display: flex;
+    gap: 10px;
+    font-size: 50px;
+}
